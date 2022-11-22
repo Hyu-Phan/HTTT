@@ -1,0 +1,83 @@
+action:
+  question: Hoạt động của điều hòa như thế nào?
+  num: 8
+  option1: 1. Bình thường
+  option2: 2. Máy chạy liên tục
+  option3: 3. Bật tắt liên tục
+  option4: 4. Tự động tắt
+  option5: 5. Không hoạt động
+  option6: 6. Hoạt động tiếp sau khi tắt
+  option7: 7. Có tiếng ồn
+  option8: 8. Ngắt nguồn đột ngột
+
+status:
+  question: Tình trạng của điều hòa như thế nào?
+  num: 4
+  option1: 1. Bình thường
+  option2: 2. Chảy nước
+  option3: 3. Bám tuyết
+  option4: 4. Rò điện cục nóng
+
+temperature:
+  question: Nhiệt độ của điều hòa như thế nào?
+  num: 5
+  option1: 1. Bình thường
+  option2: 2. Không đạt đúng ngưỡng
+  option3: 3. Yếu lạnh
+  option4: 4. Không ổn định
+  option5: 5. Không lạnh
+
+light:
+  question: Đèn báo lỗi, bảng hiển thị có biểu hiện gì không?
+  num: 4
+  option1: 1. Bình thường
+  option2: 2. Đèn vàng nháy liên tục
+  option3: 3. Báo mã lỗi
+  option4: 4. Hiển thị sai nhiệt độ
+
+cool_fan:
+  question: Quạt dàn lạnh có vấn đề gì không?
+  num: 4
+  option1: 1. Bình thường
+  option2: 2. Không có hơi lạnh
+  option3: 3. Thổi ra hơi nóng
+  option4: 4. Không có gió
+
+hot_fan:
+  question: Quạt dàn nóng có vấn đề gì không?
+  num: 4
+  option1: 1. Bình thường
+  option2: 2. Không có hơi nóng
+  option3: 3. Không hoạt động
+  option4: 4. Lúc chạy lúc không
+
+outdoor_unit:
+  question: Hoạt động cục nóng như thế nào?
+  num: 7
+  option1: 1. Bình thường
+  option2: 2. Nóng bất thường
+  option3: 3. Đóng ngắt liên tục
+  option4: 4. Không có tiếng ồn
+  option5: 5. Có âm thanh to
+  option6: 6. Có tiếng kêu nhỏ rồi tắt
+  option7: 7. Kêu tạch liên tục
+
+duct:
+  question: Ống đồng có hiện tượng gì không?
+  num: 2
+  option1: 1. Bình thường
+  option2: 2. Đóng tuyết
+
+odor:
+  question: Trong phòng điều hòa có mùi gì không?
+  num: 3
+  option1: 1. Bình thường
+  option2: 2. Mùi hôi
+  option3: 3. Mùi gas
+
+signal:
+  question: Tín hiệu nhận từ remote có vấn đề gì không?
+  num: 3
+  option1: 1. Bình thường
+  option2: 2. Mất tín hiệu
+  option3: 3. Chập chờn
