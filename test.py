@@ -34,10 +34,14 @@ for key in doc.keys():
     for option in doc[key]['options']:
         print(option)
 
-    op = int(input('Người dùng: '))
-    code = doc[key]['code']
-    signal = f'{code}%02d' % op
-    signals.append(signal)
+    ops = input('Người dùng: ').split(',')
+    signal = ''
+    for i, op in enumerate(ops):
+        code = doc[key]['code']
+        signal += f'{code}%02d' % int(op)
+        if i != len(ops) - 1: 
+            signal += ', '
+    signals.append((code, signal))
 
 print(signals)
 
@@ -50,9 +54,8 @@ id = 0
 for index, case in cases.iterrows():
     sum1 = sum2 = 0
     for signal_code in signals:
-        code = signal_code
-        signal = signal_code[:-2]
-        signal = dict_signal[signal]
+        code = signal_code[1]
+        signal = dict_signal[signal_code[0]]
         weight = weights.loc[signal, 'Trọng số']
         similarity = data2[signal].loc[code, case[signal]]
         sum1 += weight*similarity
@@ -64,5 +67,5 @@ for index, case in cases.iterrows():
         id = index
 
 print(max_probability)
-print(errors['Lỗi'][cases.loc[11, 'Lỗi']])
-print(errors['Khắc phục'][cases.loc[11, 'Lỗi']])
+print(errors['Lỗi'][cases.loc[id, 'Lỗi']])
+print(errors['Khắc phục'][cases.loc[id, 'Lỗi']])
